@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: app-repo
-        image: kiruthigaa05/app-repo:7d7f2c183ba2bd2539208cd93328c9d553b394ea
+        image: kiruthigaa05/app-repo:decc3fb3afc06d8f7749844e726c6d17ce4c0da2
         ports:
         - containerPort: 80
