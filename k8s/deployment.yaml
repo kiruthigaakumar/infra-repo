@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-repo
+  labels:
+    app: app-repo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-repo
+  template:
+    metadata:
+      labels:
+        app: app-repo
+    spec:
+      containers:
+      - name: app-repo
+        image: kiruthigaa05/app-repo:7d7f2c183ba2bd2539208cd93328c9d553b394ea
+        ports:
+        - containerPort: 80
